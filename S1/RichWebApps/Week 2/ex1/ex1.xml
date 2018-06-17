@@ -1,0 +1,24 @@
+<invoice>
+	<date> 01 January 2013 </date>
+	<refno> Invoice No. 20130101-1 </refno>
+	<details>
+		<name> Full Name </name>
+		<address1> Address Line 1 </address1>
+		<address2> Address Line 2 </address2>
+		<city> CITY </city>
+	</details>
+	
+	<order>
+		<item> Item </item>
+		<product1> Web design and development </product1>
+		<rate1> $50.00 </rate1>
+		<units1> 10 </units1>
+		<product2> Annual web hosting </product2>
+		<rate2> $100.00 </rate2>
+		<units2> 1 </units2>
+		<total> Total: $600.00 </total>
+		<gst> GST: $90.00 </gst>
+		<amnt> Amount Paid: $200.00 </amnt>
+		<due> Amount Due: $490.00 </due>
+	</order>
+</invoice>

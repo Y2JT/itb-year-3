@@ -1,0 +1,27 @@
+{
+  "invoice": {
+    "date": " 01 January 2013 ",
+    "refno": " Invoice No. 20130101-1 ",
+    "details": {
+      "name": " Full Name ",
+	  "address" : [
+      " Address Line 1 ",
+      " Address Line 2 "],
+      "city": " CITY "
+    },
+    "order": [
+	{"item": " Item "},
+	{"product1": " Web design and development "},
+	{"rate1": " $50.00 "},
+	{"units1": " 10 "},
+	{"product2": " Annual web hosting "},
+	{"rate2": " $100.00 "},
+	{"units2": " 1 "}],
+	
+	"totals" :[
+	{"total": " Total: $600.00 "},
+	{"gst": " GST: $90.00 "},
+	{"amnt": " Amount Paid: $200.00 "},
+	{"due": " Amount Due: $490.00 "}]
+    }
+  }

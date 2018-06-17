@@ -1,0 +1,12 @@
+<div *ngFor="let film of films">
+<div class="col-md-4">
+	<div  class="thumbnail">
+		<img [src]="'/../images/' + film.id + '.jpg'">
+		<a [routerLink]="['/films', film.id]"><h3>{{film.title}}</h3></a>
+		<h5>€ {{film.price}}</h5>
+		<p>{{film.blurb}}</p>
+		<osl-score score="{{film.score}}"></osl-score>
+		<osl-review></osl-review>
+	</div>
+</div>
+</div>

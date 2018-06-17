@@ -1,0 +1,1 @@
+{"version":3,"file":"menubar.component.js","sourceRoot":"","sources":["menubar.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,mCAAmC;AACnC,sCAAwC;AAOxC;IAAA;IAAuC,CAAC;IAAnB,gBAAgB;QALpC,gBAAS,CAAC;YACP,QAAQ,EAAM,MAAM,CAAC,EAAE;YACvB,QAAQ,EAAK,aAAa;YAC1B,WAAW,EAAE,wBAAwB;SACxC,CAAC;OACmB,gBAAgB,CAAG;IAAD,uBAAC;CAAA,AAAxC,IAAwC;kBAAnB,gBAAgB"}

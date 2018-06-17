@@ -1,0 +1,5 @@
+<input #newReview type="text" name="review" placeholder="{{message}}">
+<button (click)="addReview(newReview.value)" uib-tooltip="name required"
+tooltip-is-open="newReview.value.$invalid"
+tooltip-trigger="none" tooltip-placement="auto top">Submit</button>
+{{log}}

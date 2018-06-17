@@ -1,0 +1,37 @@
+<holiday>
+	<passenger>
+		<name> PASSENGER: Joey Tierney </name>
+		<seat> SEAT: 24C </seat>
+		<departure> DEPT: MAR4, 12:15 PM </departure>
+		<name2> PASSENGER: Jason Ajax </name2>
+		<seat2> SEAT: 24B </seat2>
+		<departure2> DEPT: MAR4, 12:15 PM </departure2>
+	</passenger>
+	
+	<flightdetails>
+		<destination> DEST: Rome, Italy </destination>
+		<origin> DEPT: Dublin, Ireland </origin>
+		<arrival> TIME OF ARRIVAL: 15:25 PM </arrival>
+	</flightdetails>
+	
+	<hoteldetails>
+		<hotelname> Radisson Hotel </hotelname>
+		<checkin> CHECK-IN: March 4, 16:30 PM </checkin>
+		<checkout> CHECK-OUT: March 11, 14:00 PM </checkout>	
+	</hoteldetails>
+	
+	<returnpassenger>
+		<name> PASSENGER: Joey Tierney </name>
+		<seat> SEAT: 59A </seat>
+		<departure> DEPT: MAR11, 16:05 PM </departure>
+		<name2> PASSENGER: Jason Ajax </name2>
+		<seat2> SEAT: 59B </seat2>
+		<departure2> DEPT: MAR11, 16:05 PM </departure2>
+	</returnpassenger>
+	
+	<returnflight>
+		<returndest> DEST: Dublin, Ireland </returndest>
+		<returnorigin> DEPT: Rome, Italy </returnorigin>
+		<returnarrival> TIME OF ARRIVAL: 17:20 PM </returnarrival>
+	</returnflight>
+</holiday>

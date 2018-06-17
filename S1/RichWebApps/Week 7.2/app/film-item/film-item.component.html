@@ -1,0 +1,10 @@
+<!-- Define the HTML template for FilmItemComponent here -->
+<div class="col-lg-4">
+	<div id="container">
+		<img [src]="imageUrl">
+		<h4>{{film.title}}</h4>
+		<h5>€{{film.price}}</h5> 
+		<p>{{film.blurb}}</p>
+		<osl-score score="{{film.score}}"></osl-score>
+	</div>
+</div>

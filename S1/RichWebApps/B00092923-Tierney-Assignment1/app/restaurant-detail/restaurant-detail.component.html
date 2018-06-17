@@ -1,0 +1,35 @@
+<div class="restaurantItem">
+	<h1>{{restaurant.name}}</h1>
+	<img [attr.src]="restaurant.imageURL"/>
+	<br>
+	<br>
+	<h4><i>{{restaurant.blurb}}</i></h4>
+	<div><b>Location:</b> {{restaurant.address}}</div>
+	<div><b>Opening hours:</b> {{restaurant.hours}}</div>
+	<div><b>Cuisines:</b> {{restaurant.cuisines}}</div>
+	<div><b>Facilities available:</b> {{restaurant.facilities}}</div>
+	<h3><b><i>Menu</i></b></h3>
+	<img [attr.src]="restaurant.menuImage"/>
+	<h3><b>Exisitng customer reviews</b></h3>
+	{{restaurant.reviews}}
+
+	<h3><b>Been here? Leave a review!</b></h3>
+	<form class="form-horizontal" role="form" name="commentForm">
+        <label>Your Name: </label>
+        <input required type="text" placeholder="Enter your name" />
+        <br>
+        <label>Rating: </label>
+        <label class="radio-inline"> <input type="radio" name="rating" value="1"> 1 </label>
+        <label class="radio-inline"> <input type="radio" name="rating" value="2"> 2 </label>
+        <label class="radio-inline"> <input type="radio" name="rating" value="3"> 3</label>
+        <label class="radio-inline"> <input type="radio" name="rating" value="4" > 4</label>
+        <label class="radio-inline"> <input type="radio" name="rating"  value="5"> 5</label>
+        <br>
+        <label>Comment: </label>
+        <osl-review></osl-review>
+    </form>
+	
+	<h3><b><i>{{restaurant.name}} location</i></b></h3>
+	<img [attr.src]="restaurant.mapImage"/>
+</div>
+<a routerLink="/home">Back to all restaurants</a>

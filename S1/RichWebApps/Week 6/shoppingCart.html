@@ -1,0 +1,23 @@
+<h1>Your Shopping Cart</h1>
+
+<div class="itemPanel" *ngFor="let item of items">
+
+	<h2>{{item.name}}</h2>
+	<p>
+		<label>Quantity</label>
+		<input type="number" [(ngModel)]="item.quantity">
+	</p>
+
+	<p>
+		<label>Unit Price</label>
+		<p><b>€ {{item.unit}}</b> 
+	</p>
+	
+	<p>
+		<label>Line Cost</label>
+		<p><b>€ {{item.quantity * item.unit}} </b>
+	</p>
+
+	<button (click)="remove($index)">Remove</button>
+
+</div>

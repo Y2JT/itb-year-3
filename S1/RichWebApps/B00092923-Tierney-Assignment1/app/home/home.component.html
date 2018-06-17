@@ -1,0 +1,46 @@
+<div class="jumbotron">
+  <h1>Choose a place to eat!</h1>
+  <p class="lead">Select a restaurant by what you would like to eat.<br> Choose from many counties, cusine types and ratings</p>
+
+  <ul class="nav nav-pills">
+
+  <li class="dropdown-county">
+    <label>County:</label>
+      <select [(ngModel)]="selectedCounty.id" (change)="onSelect($event.target.value)">
+        <option value="0">--Select--</option>
+        <option *ngFor="let county of counties" value= {{county.id}}>{{county.name}}</option>
+      </select>
+    </li>
+
+     <li class="dropdown-town">
+    <label>Town:</label>
+    <select>
+          <option *ngIf='selectedCounty.id == 0' value="0">--Select--</option>
+          <option *ngFor="let town of towns " value= {{town.id}}>{{town.name}}</option>
+        </select>
+    </li>
+
+    <li class="dropdown-cuisine">
+    <label>Cuisine Type:</label>
+      <select>
+         <option *ngIf='selectedCounty.id == 0' value="0">--Select--</option>
+        </select>
+    </li>
+
+    <li class="dropdown-rating">
+    <select>
+          <option *ngIf='selectedCounty.id == 0' value="0">--Select--</option>
+        </select>
+    </li>
+
+</ul>
+
+</div>
+
+
+<div *ngFor="let r of restaurants">
+	<osl-restaurant-item
+		[restaurant] = "r"
+		>
+	</osl-restaurant-item>
+</div>
